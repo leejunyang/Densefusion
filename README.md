@@ -28,16 +28,21 @@ This repository is the implementation code of the paper "DenseFusion: 6D Object 
 
 
 ## Requirements
-
-* Python 2.7/3.5/3.6 (If you want to use Python2.7 to run this repo, please rebuild the `lib/knn/` (with PyTorch 0.4.1).)
-* [PyTorch 0.4.1](https://pytorch.org/) ([PyTroch 1.0 branch](<https://github.com/j96w/DenseFusion/tree/Pytorch-1.0>))
+**First you need rebuild [pytorch_knn](https://github.com/leejunyang/torch_knn)** 
+* ~~Python 2.7/3.5/3.6 (If you want to use Python2.7 to run this repo, please rebuild the `lib/knn/` (with PyTorch 0.4.1).)~~
+* ~~[PyTorch 0.4.1](https://pytorch.org/) ([PyTroch 1.0 branch](<https://github.com/j96w/DenseFusion/tree/Pytorch-1.0>))~~
+* Python 3.9
+* Pytorch 2.4.0
 * PIL
 * scipy
 * numpy
 * pyyaml
 * logging
 * matplotlib
-* CUDA 7.5/8.0/9.0 (Required. CPU-only will lead to extreme slow training speed because of the loss calculation of the symmetry objects (pixel-wise nearest neighbour loss).)
+* ~~CUDA 7.5/8.0/9.0 (Required. CPU-only will lead to extreme slow training speed because of the loss calculation of the symmetry objects (pixel-wise nearest neighbour loss).)~~
+* * CUDA 12.1
+
+
 
 ## Code Structure
 * **datasets**
